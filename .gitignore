@@ -1,0 +1,95 @@
+# This .gitignore file should be placed at the root of your Unity project directory
+# Customize it as needed for your project
+
+# Ignore system-generated files and folders
+.DS_Store
+Thumbs.db
+
+# Ignore logs and crash reports
+/logs
+*.log
+*.stacktrace
+
+# Ignore build artifacts
+/build
+/Build
+/Builds
+/bin
+/obj
+
+# Ignore user-specific settings
+Library/
+Temp/
+Obj/
+Build/
+Builds/
+Assets/AssetStoreTools*
+*.csproj
+*.unityproj
+*.sln
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+
+# Ignore Unity-generated files
+/Assets/Plugins/Editor/JetBrains*
+/Library
+/Temp
+/Obj
+/*.csproj
+/*.unityproj
+/*.sln
+/*.suo
+/*.tmp
+/*.user
+/*.userprefs
+/*.pidb
+/*.booproj
+/*.svd
+/.idea
+/*.apk
+/*.aab
+/*.dSYM
+/*.jsproj
+
+# Ignore files created by Unity VS Code plugin
+.vscode/
+
+# Ignore project files created by popular Visual Studio and Rider plugins
+.idea/
+/.idea/*
+
+# TextMeshPro generated files
+/TextMeshPro/*
+
+# Ignore auto-generated Oculus files
+/Assets/Oculus/
+
+# Ignore localization assets
+/Assets/Localization/
+
+# Ignore auto-generated plugin files
+/Assets/Plugins/Editor/JetBrains*
+
+# Ignore LFS cache files
+/Library/
+/Library/*
+/Assets/StreamingAssets/*.bak
+/Assets/StreamingAssets/*.tmp
+/Assets/StreamingAssets/*.manifest
+/Assets/StreamingAssets/*.xml
+
+# Ignore ShaderCache
+/Assets/ShaderCache/
+
+# Uncomment if you have any of these files or folders to ignore
+# [Project]/Builds
+# [Project]/Build
+
+# Uncomment if you have the Addressable Asset System package installed and want to ignore the content
+# AddressableAssetsData/
+
+# Uncomment if you are using a custom folder for builds
+# [Project]/CustomBuilds
