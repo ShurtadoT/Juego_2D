@@ -8,7 +8,7 @@ using UnityEngine;
 public class Player_Movimiento : MonoBehaviour
 {
     private Rigidbody2D rbd2D;
-
+    //Este comentario me la suda
     //Titulo del movimiento
     [Header("Movimiento")]
 
