@@ -7438,7 +7438,7 @@ MonoBehaviour:
   tiempoEntreAtaques: 1
   tiempoSiguienteAtaque: 0
   stamina: 0
-  staminaMax: 100
+  staminaMax: 101
   hayStamina: 1
   barraStamina: {fileID: 1617069341}
 --- !u!114 &1087424913
