@@ -910,10 +910,10 @@ TextureImporter:
         serializedVersion: 2
         x: 511
         y: 332
-        width: 50
-        height: 39
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 86
+        height: 41
+      alignment: 9
+      pivot: {x: 0.27027646, y: 0.4534138}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -921,27 +921,6 @@ TextureImporter:
       bones: []
       spriteID: b0a971e0bfdaa9149ba779bb42735d36
       internalID: 21300052
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HeroKnight_27
-      rect:
-        serializedVersion: 2
-        x: 553
-        y: 351
-        width: 44
-        height: 22
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0cdcdc4da4b0ab845810ec877f016200
-      internalID: 21300054
       vertices: []
       indices: 
       edges: []
