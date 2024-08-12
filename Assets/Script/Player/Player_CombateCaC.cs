@@ -56,7 +56,7 @@ public class Player_CombateCaC : MonoBehaviour
 
     private void Golpe(){
         stamina-=20;
-        barraStamina.CambiarExtamaniaActual(stamina);
+        barraStamina.CambiarStaminaActual(stamina);
         animator.SetTrigger("Golpe");
 
         Collider2D[] objetos = Physics2D.OverlapCircleAll(controladorGolpe.position, radioGolpe);
@@ -85,7 +85,7 @@ public class Player_CombateCaC : MonoBehaviour
     private void RecuperarStamina(){
         if(stamina<staminaMax){
             stamina+=Time.deltaTime*3;
-            barraStamina.CambiarExtamaniaActual(stamina);
+            barraStamina.CambiarStaminaActual(stamina);
         }
     }
 
@@ -123,7 +123,7 @@ public class Player_CombateCaC : MonoBehaviour
         }else{
             stamina += cant;
         }
-        barraStamina.CambiarExtamaniaActual(stamina);
+        barraStamina.CambiarStaminaActual(stamina);
     }
 
     public void SetXp(){

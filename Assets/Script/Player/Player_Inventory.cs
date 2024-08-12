@@ -52,7 +52,7 @@ public class Player_Inventory : MonoBehaviour
                 puntos.text = gameObject.GetComponent<Player_CombateCaC>().puntosXP+"";
 
                 BarraVida.CambiarStadisticaVidaMaxima(999);
-                BarraVida.CambiarStadisticaVidaActual(GetComponent<Player_Life_Script>().getVida());
+                BarraVida.CambiarStadisticaVidaActual(GetComponent<Player_Life_Script>().GetVida());
 
                 BarraStamina.CambiarStadisticaStaminaMaxima(999);
                 BarraStamina.CambiarStadisticaStaminaActual(GetComponent<Player_CombateCaC>().getStamina());

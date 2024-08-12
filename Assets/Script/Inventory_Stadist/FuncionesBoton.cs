@@ -13,8 +13,8 @@ public class FuncionesBoton : MonoBehaviour
 
     public void SubirVida(){
         if(player.GetComponent<Player_CombateCaC>().puntosXP>0){
-            player.GetComponent<Player_Life_Script>().setMaxVida();
-            vida.CambiarStadisticaVidaActual(player.GetComponent<Player_Life_Script>().getVida());
+            player.GetComponent<Player_Life_Script>().SetMaxVida(100f);
+            vida.CambiarStadisticaVidaActual(player.GetComponent<Player_Life_Script>().GetVida());
             player.GetComponent<Player_CombateCaC>().SetXp();
             player.GetComponent<Player_Inventory>().puntos.text = player.GetComponent<Player_CombateCaC>().puntosXP+"";
         }
