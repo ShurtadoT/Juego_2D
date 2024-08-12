@@ -8,6 +8,9 @@ using UnityEngine;
 public class Player_Movimiento : MonoBehaviour
 {
     private Rigidbody2D rbd2D;
+
+    public bool sePuedeMover = true;
+    [SerializeField] private UnityEngine.Vector2 velocidadRebote;
     //Este comentario me la suda
     //Titulo del movimiento
     [Header("Movimiento")]
@@ -60,7 +63,9 @@ public class Player_Movimiento : MonoBehaviour
         animator.SetBool("enSuelo",enSuelo);
 
         //Mover
-        Mover(Movimiento_Horizontal * Time.fixedDeltaTime, salto);
+        if(sePuedeMover){
+            Mover(Movimiento_Horizontal * Time.fixedDeltaTime, salto);
+        }
         salto = false;
     }
 
@@ -93,5 +98,9 @@ public class Player_Movimiento : MonoBehaviour
     private void OnDrawGizmos(){
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireCube(ControladorSuelo.position, GizmosCaja);
+    }
+
+    public void Rebote(UnityEngine.Vector2 puntoGolpe){
+        rbd2D.velocity = new UnityEngine.Vector2(-velocidadRebote.x * puntoGolpe.x, velocidadRebote.y);
     }
 }
