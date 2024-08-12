@@ -28,11 +28,11 @@ public class Player_CombateCaC : MonoBehaviour
     [SerializeField] Player_Stamina_Bar barraStamina;
     
     private void Start(){
+        animator = GetComponent<Animator>();
         barraXp.CambiarXPMaxima(100);
         stamina = staminaMax;
-        barraStamina.CambiarStaminaMaxima(staminaMax);
-        animator = GetComponent<Animator>();
         stamina -= 1; 
+        barraStamina.CambiarStaminaMaxima(staminaMax);
 
         //CampoPruebasEstadisticas
         puntosXP=100;

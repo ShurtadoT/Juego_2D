@@ -9,7 +9,6 @@ public class Player_Stamina_Bar : MonoBehaviour
 
     private void Start(){
         slider = GetComponent<Slider>();
-        
     }
 
     public void CambiarStaminaMaxima(float staminaMax){
