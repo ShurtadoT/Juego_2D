@@ -10,7 +10,6 @@ public class Player_Inventory : MonoBehaviour
     private bool inventory_enable;
     public GameObject inventory;
     private int allSlots;
-    private int enableSlots;
     private GameObject[] slot;
     public GameObject slotHolder;
     public TextMeshProUGUI puntos;
@@ -27,13 +26,14 @@ public class Player_Inventory : MonoBehaviour
     //Oro
     public float oro;
 
-
+    private Item[] items;
 
 
     void Start()
     {
         allSlots = slotHolder.transform.childCount;
         slot = new GameObject[allSlots];
+        items = new Item[allSlots];
 
         for (int i = 0; i < allSlots; i++)
         {
@@ -52,7 +52,7 @@ public class Player_Inventory : MonoBehaviour
                 puntos.text = gameObject.GetComponent<Player_CombateCaC>().puntosXP+"";
 
                 BarraVida.CambiarStadisticaVidaMaxima(999);
-                BarraVida.CambiarStadisticaVidaActual(GetComponent<Player_Life_Script>().getVida());
+                BarraVida.CambiarStadisticaVidaActual(GetComponent<Player_Life_Script>().GetVida());
 
                 BarraStamina.CambiarStadisticaStaminaMaxima(999);
                 BarraStamina.CambiarStadisticaStaminaActual(GetComponent<Player_CombateCaC>().getStamina());
@@ -74,7 +74,6 @@ public class Player_Inventory : MonoBehaviour
             GameObject itempickedUp=other.gameObject;
 
             Item item = itempickedUp.GetComponent<Item>();
-
             AddItem(itempickedUp,item.id,item.type,item.description,item.icon,item.cantidad);
         }
         if(other.tag=="oro"){
@@ -85,7 +84,6 @@ public class Player_Inventory : MonoBehaviour
             Destroy(other);
         }
     }
-
     public void AddItem(GameObject itemObject, int item_ID, String itemType, string itemDescription, Sprite itemIcon, int itemCantidad){
         for (int i = 0; i < allSlots; i++)
         {

@@ -1,6 +1,4 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Player_Life_Script : MonoBehaviour
@@ -13,7 +11,6 @@ public class Player_Life_Script : MonoBehaviour
     private Player_Movimiento movimientoJugador;
     [SerializeField] private float tiempoPerdidaControl;
     private Animator animator;
-    
 
     private void Start(){
         movimientoJugador = GetComponent<Player_Movimiento>();
@@ -30,40 +27,44 @@ public class Player_Life_Script : MonoBehaviour
         }
     }
 
-    public void TomarDaño(float daño, UnityEngine.Vector2 poscicion){
+    public void TomarDaño(float daño, Vector2 posicion){
         animator.SetTrigger("GolpeRc");
         StartCoroutine(PerderControl());
-        movimientoJugador.Rebote(poscicion);
+        movimientoJugador.Rebote(posicion);
         TomarDaño(daño);
     }
 
-private IEnumerator PerderControl()
-{
-    movimientoJugador.sePuedeMover = false;
-    yield return new WaitForSeconds(tiempoPerdidaControl);
-    movimientoJugador.sePuedeMover = true;
-}
- 
-  
+    private IEnumerator PerderControl()
+    {
+        movimientoJugador.sePuedeMover = false;
+        yield return new WaitForSeconds(tiempoPerdidaControl);
+        movimientoJugador.sePuedeMover = true;
+    }
+
     public void Curar(float vidaExtra){
-        if((vidaExtra+vida)>maximoVida){
-            vida=maximoVida;
-        }else{
-            vida+= vidaExtra;
+        if(vida + vidaExtra > maximoVida){
+            vida = maximoVida;
+        } else {
+            vida += vidaExtra;
         }
         barraVida.CambiarVidaActual(vida);
     }
 
-    public float getVida(){
+    public float GetVida(){
+        return vida;
+    }
+
+    public void SetVida(float valor){
+        vida = valor; 
+        barraVida.CambiarVidaActual(vida);
+    }
+
+    public float GetMaximoVida(){
         return maximoVida;
     }
 
-    public void setVida(float valor){
-        vida += valor; 
-    }
-
-    public void setMaxVida(){
-        maximoVida += 1;
+    public void SetMaxVida(float valor){
+        maximoVida = valor;
         barraVida.CambiarVidaMAxima(maximoVida);
     }
 }
