@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 772.8
   m_ShowMode: 4
-  m_Title: Console
+  m_Title: Scene
   m_RootView: {fileID: 7}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -146,8 +146,8 @@ MonoBehaviour:
     y: 482.4
     width: 1160.8
     height: 240.4
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 16}
@@ -297,8 +297,8 @@ MonoBehaviour:
     y: 0
     width: 923.2001
     height: 482.4
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -346,7 +346,7 @@ MonoBehaviour:
   m_Zoom: -1
   m_ScrollPosition: {x: 0, y: 0}
   m_SelectedObject: {fileID: 0}
-  m_SelectedSpriteRectGUID: 6fb70d53f0c4795f0800000000000000
+  m_SelectedSpriteRectGUID: c779570b9b2effe4b87f55962dfdcb87
   m_LastUsedModuleTypeName: 
 --- !u!114 &14
 MonoBehaviour:
@@ -384,7 +384,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 27744
+  m_LastSelectedObjectID: 28892
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -542,9 +542,9 @@ MonoBehaviour:
       e32: 0
       e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: 79cadbd19e29b294a81924827f6c3c68, type: 2}
+  m_AnimatorController: {fileID: 9100000, guid: 7ad2f36445a76d744854064cdc7a6f62, type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: -7661286036431908579, guid: 79cadbd19e29b294a81924827f6c3c68, type: 2}
+  - m_Target: {fileID: 6633417512554567696, guid: 7ad2f36445a76d744854064cdc7a6f62, type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
   stateMachineGraphGUI: {fileID: 0}
@@ -602,7 +602,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - "Assets/Dise\xF1os/CreacionEscenario/PreFabs/Enemies"
+    - "Assets/Dise\xF1os/CreacionEscenario/PreFabs/Items"
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -610,16 +610,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 61
   m_LastFolders:
-  - "Assets/Dise\xF1os/CreacionEscenario/PreFabs/Enemies"
+  - "Assets/Dise\xF1os/CreacionEscenario/PreFabs/Items"
   m_LastFoldersGridSize: 61
   m_LastProjectPath: C:\Users\sakur\Juego_2D
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: c8780000
-    m_LastClickedID: 30920
-    m_ExpandedIDs: 00000000887300008a7300008c7300008e7300009073000092730000947300009673000098730000
+    m_SelectedIDs: 50a60000
+    m_LastClickedID: 42576
+    m_ExpandedIDs: 000000009c7300009e730000a0730000a2730000a4730000a8730000aa730000ac73000070a6000098a60000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -647,7 +647,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000887300008a7300008c7300008e7300009073000092730000947300009673000098730000
+    m_ExpandedIDs: 000000009c7300009e730000a0730000a2730000a4730000a6730000a8730000aa730000ac730000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -672,9 +672,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: f06d0000
-    m_LastClickedInstanceID: 28144
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c623000086a5000068610000546d00006e72000062730000000000006071000064710000be730000ac6e00005495000056950000946b0000ca6f00001eac00002eac000060ab000070ab000088ab000028c40100e6730000de730000ee730000fe7300009e730000ba7300006a7300009ac50000c2730000127400000a7400008e7300006e7300008673000082730000b2730000d8720000dc720000e0720000e4720000e8720000ec720000f0720000f4720000f8720000d472000012730000167300001a7300001e73000022730000d4730000d8730000dc730000c2f50000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -787,23 +787,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 606c0000
-      m_LastClickedID: 27744
-      m_ExpandedIDs: 1cfbffff986d0000a26d0000e86d00009c6e0000c0700000
+      m_SelectedIDs: be6d0000
+      m_LastClickedID: 28094
+      m_ExpandedIDs: b8faffff086d0000246d0000d06d00001a6f0000846f0000da6f0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: VidaBar
-        m_OriginalName: VidaBar
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 28864
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 5}
       m_SearchString: 
@@ -1182,9 +1182,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 12.67891, y: -1.2905183, z: 605.5724}
+    m_Target: {x: -8.231125, y: -1.2143222, z: 714.8462}
     speed: 2
-    m_Value: {x: 12.67891, y: -1.2905183, z: 605.5724}
+    m_Value: {x: -8.231125, y: -1.2143222, z: 714.8462}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1234,9 +1234,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 5.9287605
+    m_Target: 6.854456
     speed: 2
-    m_Value: 5.9287605
+    m_Value: 6.854456
   m_Ortho:
     m_Target: 1
     speed: 2

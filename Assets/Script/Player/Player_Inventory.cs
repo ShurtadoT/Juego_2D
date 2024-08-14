@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System.Linq;
 
 public class Player_Inventory : MonoBehaviour
 {
@@ -22,19 +23,38 @@ public class Player_Inventory : MonoBehaviour
     // Oro
     public float oro;
 
+    //Congelar
+    private bool esPausa = false;
+
     private Item[] items;
+    public GameObject[] prefabsItems;
 
     public List<Slot> slots;
+
+    private void Pausa(){
+        if(esPausa){
+            Time.timeScale = 1f;
+            esPausa = false;
+        }else{
+            Time.timeScale = 0f;
+            esPausa = true;
+        }
+    }
 
     // Método para guardar el inventario
     public List<ItemData> SaveInventory()
     {
         List<ItemData> inventoryData = new List<ItemData>();
-        foreach (Slot slot in slots)
+
+        for (int i = 0; i < allSlots; i++)
         {
-            if (slot != null && !slot.empty)
-            {
-                Item item = slot.item.GetComponent<Item>();
+            Item item = new Item();
+            if(slot[i] != null && slot[i].GetComponent<Slot>().empty == false){
+                item.id = slot[i].GetComponent<Slot>().ID;
+                item.type = slot[i].GetComponent<Slot>().type;
+                item.description = slot[i].GetComponent<Slot>().description;
+                item.cantidad = slot[i].GetComponent<Slot>().cantidad;
+                item.icon = slot[i].GetComponent<Slot>().icon;
                 ItemData data = new ItemData(item.id, item.type, item.description, item.cantidad, item.icon.name);
                 inventoryData.Add(data);
             }
@@ -45,23 +65,28 @@ public class Player_Inventory : MonoBehaviour
     // Método para cargar el inventario
     public void LoadInventory(List<ItemData> inventoryData)
     {
-        foreach (Slot slot in slots)
+        for (int i = 0; i < allSlots; i++)
         {
-            slot.ClearSlot(); // Asume que ClearSlot limpia el slot
+            slot[i].GetComponent<Slot>().ClearSlot();
         }
 
-        foreach (ItemData data in inventoryData)
+        for (int i = 0; i < inventoryData.Count; i++)
         {
-            Slot slot = slots.Find(s => s.empty); // Encuentra un slot vacío
-            if (slot != null)
-            {
-                slot.ID = data.id;
-                slot.type = data.type;
-                slot.description = data.description;
-                slot.cantidad = data.cantidad;
-                slot.icon = Resources.Load<Sprite>(data.iconPath); // Asume que los iconos están en Resources
-                slot.empty = false;
-                slot.UpdateSlot(); // Actualiza el slot visualmente
+            bool encontrado = false;
+            if(slot[i].GetComponent<Slot>() != null && slot[i].GetComponent<Slot>().empty){
+                GameObject itemCargado = null;
+                for (int j = 0; j < prefabsItems.Length; j++)
+                {
+                    if(inventoryData[i].id == prefabsItems[j].GetComponent<Item>().id){
+                        encontrado = true;
+                        itemCargado = Instantiate(prefabsItems[j]);
+                    }
+                }
+                if (encontrado)
+                {
+                    AddItem(itemCargado,inventoryData[i].id,inventoryData[i].type,inventoryData[i].description,itemCargado.GetComponent<Item>().icon,inventoryData[i].cantidad);
+                    encontrado = false;
+                }
             }
         }
     }
@@ -100,6 +125,7 @@ public class Player_Inventory : MonoBehaviour
                 BarraDaño.CambiarStadisticaDañoMaximo(999);
                 BarraDaño.CambiarStadisticaDañoActual(GetComponent<Player_CombateCaC>().getDaño());
             }
+            Pausa();
         }
 
         inventory.SetActive(inventory_enable);
@@ -124,28 +150,43 @@ public class Player_Inventory : MonoBehaviour
 
     public void AddItem(GameObject itemObject, int item_ID, String itemType, string itemDescription, Sprite itemIcon, int itemCantidad)
     {
+        bool bandera = false;
         for (int i = 0; i < allSlots; i++)
         {
-            if (slot[i].GetComponent<Slot>().empty)
-            {
-                itemObject.GetComponent<Item>().pickedUp = true;
-
-                slot[i].GetComponent<Slot>().item = itemObject;
-                slot[i].GetComponent<Slot>().ID = item_ID;
-                slot[i].GetComponent<Slot>().type = itemType;
-                slot[i].GetComponent<Slot>().description = itemDescription;
-                slot[i].GetComponent<Slot>().icon = itemIcon;
-                slot[i].GetComponent<Slot>().cantidad = itemCantidad;
-                slot[i].transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = itemCantidad.ToString();
-
-                itemObject.transform.parent = slot[i].transform;
-                itemObject.SetActive(false);
-
-                slot[i].GetComponent<Slot>().UpdateSlot();
-                slot[i].GetComponent<Slot>().empty = false;
-
-                return;
+            if(!slot[i].GetComponent<Slot>().empty && slot[i].GetComponent<Slot>().ID == item_ID){
+                slot[i].GetComponent<Slot>().cantidad += itemCantidad;
+                slot[i].GetComponent<Transform>().GetChild(2).GetComponent<Item>().cantidad += itemCantidad;
+                slot[i].transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = slot[i].GetComponent<Transform>().GetChild(2).GetComponent<Item>().cantidad.ToString();
+                Destroy(itemObject);
+                bandera = true;
             }
         }
+        if(bandera == false){
+            for (int i = 0; i < allSlots; i++)
+            {
+
+                if (slot[i].GetComponent<Slot>().empty)
+                {
+                    itemObject.GetComponent<Item>().pickedUp = true;
+
+                    slot[i].GetComponent<Slot>().item = itemObject;
+                    slot[i].GetComponent<Slot>().ID = item_ID;
+                    slot[i].GetComponent<Slot>().type = itemType;
+                    slot[i].GetComponent<Slot>().description = itemDescription;
+                    slot[i].GetComponent<Slot>().icon = itemIcon;
+                    slot[i].GetComponent<Slot>().cantidad = itemCantidad;
+                    slot[i].transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = itemCantidad.ToString();
+
+                    itemObject.transform.parent = slot[i].transform;
+                    itemObject.SetActive(false);
+
+                    slot[i].GetComponent<Slot>().UpdateSlot();
+                    slot[i].GetComponent<Slot>().empty = false;
+                    return;
+                }
+            }
+
+        }
+
     }
 }

@@ -2466,6 +2466,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jefe_Zombra
       objectReference: {fileID: 0}
+    - target: {fileID: 638671732875850634, guid: 223d8c254aebd9548a442d558e9f9b41, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3234678584850902833, guid: 223d8c254aebd9548a442d558e9f9b41, type: 3}
       propertyPath: m_LocalPosition.x
       value: 19.0112
@@ -4487,6 +4491,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5638230407614489325, guid: 8135cfddfe6d3f2409c852e3244cf2d1, type: 3}
+      propertyPath: iconName
+      value: 256x_decanter_OL_green
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638230407614489325, guid: 8135cfddfe6d3f2409c852e3244cf2d1, type: 3}
       propertyPath: description
       value: Posion de stamina grande
       objectReference: {fileID: 0}
@@ -4513,7 +4521,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &807226562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6226,6 +6234,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2397707890247417635, guid: 23d943a1aac225048b354595b2c0e410, type: 3}
+      propertyPath: iconName
+      value: 512x_beaker_red
+      objectReference: {fileID: 0}
+    - target: {fileID: 2397707890247417635, guid: 23d943a1aac225048b354595b2c0e410, type: 3}
       propertyPath: description
       value: Posion de vida menor
       objectReference: {fileID: 0}
@@ -7841,7 +7853,7 @@ Transform:
   m_GameObject: {fileID: 1087424905}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.49, y: -1.98, z: 0}
+  m_LocalPosition: {x: -17.54, y: -1.98, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7894,6 +7906,13 @@ MonoBehaviour:
   BarraStamina: {fileID: 1988027615}
   "BarraDa\xF1o": {fileID: 2109293813}
   oro: 0
+  prefabsItems:
+  - {fileID: 1107135326098750837, guid: 8135cfddfe6d3f2409c852e3244cf2d1, type: 3}
+  - {fileID: 9039065762266095266, guid: b8706fbdad4c1ff408369fb4cfb6f204, type: 3}
+  - {fileID: 2288094074978723212, guid: d02246ea9cfad154685a0ac03212d8ff, type: 3}
+  - {fileID: 1209055068551030342, guid: bf28b1ba2746bda419f619de047d30e9, type: 3}
+  - {fileID: 7180112428842026038, guid: d9ec491a348d72a4baa74ea1b090a4ce, type: 3}
+  - {fileID: 1945241594942601241, guid: 23d943a1aac225048b354595b2c0e410, type: 3}
   slots: []
 --- !u!114 &1087424914
 MonoBehaviour:
@@ -8808,6 +8827,7 @@ MonoBehaviour:
   description: 
   cantidad: 100
   icon: {fileID: 0}
+  iconName: 
   pickedUp: 0
 --- !u!1 &1190759216
 GameObject:
@@ -9154,6 +9174,10 @@ PrefabInstance:
     - target: {fileID: 7981688506042786534, guid: bf28b1ba2746bda419f619de047d30e9, type: 3}
       propertyPath: cantidad
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7981688506042786534, guid: bf28b1ba2746bda419f619de047d30e9, type: 3}
+      propertyPath: iconName
+      value: 512x_decanter_red
       objectReference: {fileID: 0}
     - target: {fileID: 7981688506042786534, guid: bf28b1ba2746bda419f619de047d30e9, type: 3}
       propertyPath: description
@@ -11129,6 +11153,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3964259993422594995, guid: d02246ea9cfad154685a0ac03212d8ff, type: 3}
+      propertyPath: iconName
+      value: 256x_beaker_green
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964259993422594995, guid: d02246ea9cfad154685a0ac03212d8ff, type: 3}
       propertyPath: description
       value: Posion de stamina menor
       objectReference: {fileID: 0}
@@ -12138,7 +12166,7 @@ RectTransform:
   m_Father: {fileID: 2036323036}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -13073,6 +13101,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5237997404943865813, guid: d9ec491a348d72a4baa74ea1b090a4ce, type: 3}
+      propertyPath: iconName
+      value: 512x_bottle_red
+      objectReference: {fileID: 0}
+    - target: {fileID: 5237997404943865813, guid: d9ec491a348d72a4baa74ea1b090a4ce, type: 3}
       propertyPath: description
       value: Posion de vida mediana
       objectReference: {fileID: 0}
@@ -14004,6 +14036,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4930542397563074334, guid: b8706fbdad4c1ff408369fb4cfb6f204, type: 3}
+      propertyPath: iconName
+      value: 256x_bottle2_green
+      objectReference: {fileID: 0}
+    - target: {fileID: 4930542397563074334, guid: b8706fbdad4c1ff408369fb4cfb6f204, type: 3}
       propertyPath: description
       value: Posion de stamina mediana
       objectReference: {fileID: 0}
@@ -14270,6 +14306,7 @@ MonoBehaviour:
   description: 
   cantidad: 100
   icon: {fileID: 0}
+  iconName: 
   pickedUp: 0
 --- !u!50 &2018748521
 Rigidbody2D:

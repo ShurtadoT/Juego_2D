@@ -10,6 +10,7 @@ public class SaveLoadSystem : MonoBehaviour
     {
         // Guarda los datos del jugador y el inventario
         List<ItemData> inventoryData = playerInventory.SaveInventory();
+        Debug.Log(inventoryData.Count);
         PlayerData data = new PlayerData(vida, maximoVida, dañoGolpe, maximoStamina, xp, puntosXP, vector, inventoryData);
 
         string json = JsonUtility.ToJson(data);
