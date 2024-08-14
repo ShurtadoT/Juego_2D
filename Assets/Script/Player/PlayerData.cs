@@ -11,8 +11,9 @@ public class PlayerData
     public float xp;
     public int puntosXP;
     public Vector3 ubicacion;
+    public List<ItemData> inventory;
 
-    public PlayerData(float vida,float maximoVida, float dañoGolpe, float maximoStamina,float xp,int puntosXP,Vector3 ubicacion){
+    public PlayerData(float vida,float maximoVida, float dañoGolpe, float maximoStamina,float xp,int puntosXP,Vector3 ubicacion, List<ItemData> inventory){
         this.vida = vida;
         this.maximoVida = maximoVida;
         this.dañoGolpe = dañoGolpe;
@@ -20,5 +21,7 @@ public class PlayerData
         this.xp = xp;
         this.puntosXP = puntosXP;
         this.ubicacion = ubicacion;
+        this.inventory = inventory;
     }
 }
+
