@@ -20,6 +20,7 @@ public class Player_Life_Script : MonoBehaviour
     }
 
     public void TomarDaño(float daño){
+        animator.SetTrigger("GolpeRc");
         vida -= daño;
         barraVida.CambiarVidaActual(vida);
         if(vida <= 0){

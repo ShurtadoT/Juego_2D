@@ -21,11 +21,16 @@ public class Enemigo_Vida : MonoBehaviour
     }
 
     private void Muerte(){
-        animator.SetTrigger("Muerte");
+        animator.SetTrigger("Murio");
+        StartCoroutine(DestruirDespuesDeMuerte());
     }
 
-    void Update()
-    {
-        
+    private IEnumerator DestruirDespuesDeMuerte() {
+        AnimatorStateInfo animStateInfo = animator.GetCurrentAnimatorStateInfo(0);
+        float duracionAnimacion = animStateInfo.length;
+    
+        yield return new WaitForSeconds(duracionAnimacion);
+    
+        Destroy(gameObject);
     }
 }

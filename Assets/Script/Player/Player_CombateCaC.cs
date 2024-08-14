@@ -31,8 +31,8 @@ public class Player_CombateCaC : MonoBehaviour
         animator = GetComponent<Animator>();
         barraXp.CambiarXPMaxima(100);
         stamina = staminaMax;
-        stamina -= 1; 
-        barraStamina.CambiarStaminaMaxima(staminaMax);
+        iniciar(staminaMax);
+        stamina -= 1;
 
         //CampoPruebasEstadisticas
         puntosXP=100;
@@ -64,6 +64,9 @@ public class Player_CombateCaC : MonoBehaviour
         foreach (Collider2D colisionador in objetos){
             if(colisionador.CompareTag("Enemigo")){
                 colisionador.transform.GetComponent<Enemigo_Vida>().TomarDaño(dañoGolpe);
+            }
+            if(colisionador.CompareTag("boss")){
+                colisionador.transform.GetComponent<Jefe>().TomarDaño(dañoGolpe);
             }
         } 
     }
@@ -152,5 +155,8 @@ public class Player_CombateCaC : MonoBehaviour
         return xp;
     }
 
+    private void iniciar(float staminaMax){
+        barraStamina.InicializarBarraStamina(staminaMax);
+    }
 
 }
