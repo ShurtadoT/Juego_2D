@@ -19,6 +19,15 @@ public class Slot : MonoBehaviour, IPointerClickHandler
 
     public Transform slotIconGameObject;
 
+    public void ClearSlot(){
+        ID = 0;
+        type = "";
+        description = "";
+        cantidad = 0;
+        icon = null;
+        // Lógica para limpiar visualmente el slot...
+    }
+
 
     private void Start(){
         iconDefault = gameObject.GetComponent<Image>().sprite;
@@ -26,7 +35,13 @@ public class Slot : MonoBehaviour, IPointerClickHandler
     }
 
     public void UpdateSlot(){
-        slotIconGameObject.GetComponent<Image>().sprite = icon;
+        if (icon != null){
+            slotIconGameObject.GetComponent<Image>().sprite = icon;
+        }
+        else{
+            // Cargar icono desde los recursos si es necesario
+            slotIconGameObject.GetComponent<Image>().sprite = Resources.Load<Sprite>("Icons/" + iconDefault.name);
+        }
     }
 
     public void UserItem(){

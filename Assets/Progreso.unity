@@ -7464,6 +7464,7 @@ MonoBehaviour:
   BarraStamina: {fileID: 1988027615}
   "BarraDa\xF1o": {fileID: 2109293813}
   oro: 0
+  slots: []
 --- !u!114 &1087424914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7504,6 +7505,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1de976117982f354db81c6f6e431c49c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInventory: {fileID: 1087424913}
 --- !u!1 &1089354046
 GameObject:
   m_ObjectHideFlags: 0
