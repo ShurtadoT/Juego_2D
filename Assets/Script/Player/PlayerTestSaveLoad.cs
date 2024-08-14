@@ -1,9 +1,10 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerTestSaveLoad : MonoBehaviour
 {
     private SaveLoadSystem saveLoadSystem;
-
+    public bool puedeGuardar = false;
     private void Start()
     {
         saveLoadSystem = GetComponent<SaveLoadSystem>();
@@ -11,7 +12,7 @@ public class PlayerTestSaveLoad : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.T))
+        if (Input.GetKeyDown(KeyCode.K) && puedeGuardar)
         {
             saveLoadSystem.GuardarDatos(GetComponent<Player_Life_Script>().GetVida(),GetComponent<Player_Life_Script>().GetMaximoVida()
             ,GetComponent<Player_CombateCaC>().getDaño(),GetComponent<Player_CombateCaC>().getMaxStamina(),
@@ -21,6 +22,17 @@ public class PlayerTestSaveLoad : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.L))
         {
             saveLoadSystem.CargarDatos();
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other){
+        if(other.CompareTag("PuntoGuardado")){
+            puedeGuardar = !puedeGuardar;
+        }
+    }
+        private void OnTriggerExit2D(Collider2D other){
+        if(other.CompareTag("PuntoGuardado")){
+            puedeGuardar = !puedeGuardar;
         }
     }
 }

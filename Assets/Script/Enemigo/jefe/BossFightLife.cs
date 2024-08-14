@@ -18,10 +18,12 @@ public class BossFightLife : MonoBehaviour
     }
 
     public void CambiarVidaActual(float vida){
+        slider = GetComponent<Slider>();
         slider.value = vida;
     }
 
     public void InicializarBarraVida(float vida){
+        slider = GetComponent<Slider>();
         CambiarVidaMax(vida);
         CambiarVidaActual(vida);
     }

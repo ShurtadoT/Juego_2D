@@ -8,6 +8,7 @@ TagManager:
   - Item
   - oro
   - boss
+  - PuntoGuardado
   layers:
   - Default
   - TransparentFX
@@ -17,7 +18,7 @@ TagManager:
   - UI
   - player
   - boss
-  - 
+  - Enemigos
   - 
   - 
   - 

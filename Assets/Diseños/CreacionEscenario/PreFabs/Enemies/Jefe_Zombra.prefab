@@ -196,7 +196,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
   jugador: {fileID: 0}
-  mirandoDerecha: 1
+  mirandoDerecha: 0
   vida: 10
   barraDeVida: {fileID: 0}
   controladorAtaque: {fileID: 306475977632136413}

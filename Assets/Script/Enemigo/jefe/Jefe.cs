@@ -12,7 +12,7 @@ public class Jefe : MonoBehaviour
 
     [Header("Vida")]
     public float vida;
-    [SerializeField] private BossFightLife barraDeVida;
+    public BossFightLife barraDeVida;
 
     [Header("Ataque")]
     [SerializeField] private Transform controladorAtaque;
@@ -68,5 +68,10 @@ public class Jefe : MonoBehaviour
     private void OnDrawGizmos(){
         Gizmos.color = Color.blue;
         Gizmos.DrawWireSphere(controladorAtaque.position,radioAtaque);
+    }
+
+    public void setBarraVida(BossFightLife barraDeVida){
+        this.barraDeVida = barraDeVida;
+        barraDeVida.InicializarBarraVida(vida);
     }
 }
