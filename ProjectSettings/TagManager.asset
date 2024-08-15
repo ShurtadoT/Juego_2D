@@ -46,3 +46,21 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Fondo
+    uniqueID: 822017091
+    locked: 0
+  - name: Paletas
+    uniqueID: 737323787
+    locked: 0
+  - name: Decoracion
+    uniqueID: 3563002847
+    locked: 0
+  - name: Player
+    uniqueID: 4130805477
+    locked: 0
+  - name: Enemigos
+    uniqueID: 3883412675
+    locked: 0
+  - name: Camara
+    uniqueID: 3518915019
+    locked: 0
