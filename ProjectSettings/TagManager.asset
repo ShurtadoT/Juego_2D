@@ -47,6 +47,7 @@ TagManager:
     uniqueID: 0
     locked: 0
   - name: Fondo
+<<<<<<< HEAD
     uniqueID: 822017091
     locked: 0
   - name: Paletas
@@ -63,4 +64,16 @@ TagManager:
     locked: 0
   - name: Camara
     uniqueID: 3518915019
+=======
+    uniqueID: 63691369
+    locked: 0
+  - name: Suelo
+    uniqueID: 316446219
+    locked: 0
+  - name: 'Enemigos '
+    uniqueID: 4088867333
+    locked: 0
+  - name: Jugador
+    uniqueID: 3976255307
+>>>>>>> 33c551a6338f47ee3de66f87b39e5092a8988d4f
     locked: 0
