@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class Player_Stamina_Bar : MonoBehaviour
 {
-    public Slider slider;
+    private Slider slider;
 
     private void Start(){
         slider = GetComponent<Slider>();
@@ -17,8 +17,8 @@ public class Player_Stamina_Bar : MonoBehaviour
         slider.value = cantidadStamina;
     }
 
-    public void InicializarBarraStamina(float stamina){
-        CambiarStaminaMaxima(stamina);
-        CambiarStaminaActual(stamina);
+    public void InicializarBarraStamina(float stmaina){
+        CambiarStaminaMaxima(stmaina);
+        CambiarStaminaActual(stmaina);
     }
 }

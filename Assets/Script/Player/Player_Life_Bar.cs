@@ -6,8 +6,6 @@ using UnityEngine.UI;
 public class Player_Life_Bar : MonoBehaviour
 {
     private Slider slider;
-    private float cantidadVida; // Declarar variables
-    private float vidaMaxima;
 
     private void Start(){
         slider = GetComponent<Slider>();
@@ -27,9 +25,5 @@ public class Player_Life_Bar : MonoBehaviour
         CambiarVidaActual(cantidadVida);
     }
 
-    public void UpdateHealthBar(){
-        slider.value = cantidadVida / vidaMaxima;
-    
-    }
 
 }

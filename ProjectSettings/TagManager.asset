@@ -7,6 +7,8 @@ TagManager:
   - Enemigo
   - Item
   - oro
+  - boss
+  - PuntoGuardado
   layers:
   - Default
   - TransparentFX
@@ -14,9 +16,9 @@ TagManager:
   - Suelo
   - Water
   - UI
-  - 
-  - 
-  - 
+  - player
+  - boss
+  - Enemigos
   - 
   - 
   - 

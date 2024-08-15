@@ -10,6 +10,7 @@ public class Item : MonoBehaviour
     public string description;
     public int cantidad;
     public Sprite icon;
+    public string iconName;
     
     [HideInInspector]
     public bool pickedUp;
@@ -19,7 +20,7 @@ public class Item : MonoBehaviour
     }
 
     public void ItemUse(){
-        cantidad-=1;
+        player = GameObject.Find("Player");
         if(id == 1){
             player.GetComponent<Player_Life_Script>().Curar(25);
         }
@@ -38,6 +39,7 @@ public class Item : MonoBehaviour
         if(id == 6){
             player.GetComponent<Player_CombateCaC>().SetStamina(100);
         }
+        cantidad-=1;
     }
 
 
