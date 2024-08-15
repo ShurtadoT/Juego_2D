@@ -20,6 +20,7 @@ MonoBehaviour:
     height: 772.8
   m_ShowMode: 4
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Title: Project
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
@@ -27,6 +28,11 @@ MonoBehaviour:
   m_Title: Hierarchy
   m_RootView: {fileID: 9}
   m_MinSize: {x: 875, y: 321}
+>>>>>>> refs/remotes/origin/main
+=======
+  m_Title: Scene
+  m_RootView: {fileID: 9}
+  m_MinSize: {x: 875, y: 300}
 >>>>>>> refs/remotes/origin/main
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
@@ -50,7 +56,7 @@ MonoBehaviour:
     x: 583.2
     y: 0
     width: 556.8
-    height: 362
+    height: 324.4
   m_MinSize: {x: 242, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 15}
@@ -76,13 +82,13 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 360.8
+    y: 398.4
     width: 1140
-    height: 362
+    height: 324.4
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 10047
+  controlID: 112
   draggingID: 0
 --- !u!114 &4
 MonoBehaviour:
@@ -107,7 +113,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 125
+  controlID: 118
   draggingID: 0
 --- !u!114 &5
 MonoBehaviour:
@@ -133,7 +139,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 126
+  controlID: 119
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -154,8 +160,8 @@ MonoBehaviour:
     y: 0
     width: 396
     height: 722.8
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 21}
@@ -180,9 +186,9 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 283.2
-    height: 360.8
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+    height: 398.4
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 22}
   m_Panes:
   - {fileID: 22}
@@ -206,7 +212,7 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 583.2
-    height: 362
+    height: 324.4
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 20}
@@ -245,7 +251,7 @@ MonoBehaviour:
     y: 0
     width: 1536
     height: 772.8
-  m_MinSize: {x: 875, y: 321}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -331,7 +337,11 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
+<<<<<<< HEAD
   controlID: 20
+>>>>>>> refs/remotes/origin/main
+=======
+  controlID: 52
 >>>>>>> refs/remotes/origin/main
   draggingID: 0
 --- !u!114 &6
@@ -388,11 +398,15 @@ MonoBehaviour:
   controlID: 44
 =======
     width: 1140
-    height: 360.8
+    height: 398.4
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
+<<<<<<< HEAD
   controlID: 21
+>>>>>>> refs/remotes/origin/main
+=======
+  controlID: 53
 >>>>>>> refs/remotes/origin/main
   draggingID: 0
 --- !u!114 &8
@@ -534,7 +548,7 @@ MonoBehaviour:
     x: 283.2
     y: 0
     width: 856.8
-    height: 360.8
+    height: 398.4
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 23}
@@ -544,7 +558,7 @@ MonoBehaviour:
   - {fileID: 17}
   - {fileID: 19}
   m_Selected: 0
-  m_LastSelected: 2
+  m_LastSelected: 1
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -566,9 +580,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 583.2
-    y: 434.4
+    y: 472
     width: 554.8
-    height: 341
+    height: 303.4
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -678,8 +692,8 @@ MonoBehaviour:
   m_MipLevel: 0
   m_Zoom: 0.9965066
   m_ScrollPosition: {x: -49.941105, y: 257.3527}
-  m_SelectedObject: {fileID: 2800000, guid: a2148cb95fda2a246b72a3834f9dc4a3, type: 3}
-  m_SelectedSpriteRectGUID: ef0e3f0cb8004574b82da59d0a937b77
+  m_SelectedObject: {fileID: 0}
+  m_SelectedSpriteRectGUID: 00000000000000000000000000000000
   m_LastUsedModuleTypeName: UnityEditor.U2D.Sprites.SpritePhysicsShapeModule
 --- !u!114 &18
 MonoBehaviour:
@@ -972,9 +986,9 @@ MonoBehaviour:
 --- !u!114 &14
 =======
     x: 0
-    y: 434.4
+    y: 472
     width: 582.2
-    height: 341
+    height: 303.4
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1011,9 +1025,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 319}
-    m_SelectedIDs: dabd0000
-    m_LastClickedID: 48602
-    m_ExpandedIDs: 00000000ea6f0000027000000470000024700000287000002c700000ce700000167300001a7300001e7300008eab0000d6ab0000dabd0000
+    m_SelectedIDs: e0770000
+    m_LastClickedID: 30688
+    m_ExpandedIDs: 0000000070770000727700007477000076770000787700007a7700007c7700007e77000080770000827700008477000086770000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1041,7 +1055,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ea6f0000ec6f0000ee6f0000f06f0000f26f0000f46f0000f66f0000f86f0000fa6f0000fc6f0000fe6f000000700000027000000470000006700000087000000a7000000c7000000e70000010700000
+    m_ExpandedIDs: 0000000070770000727700007477000076770000787700007a7700007c7700007e77000080770000827700008477000086770000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1172,7 +1186,11 @@ MonoBehaviour:
     height: 463
 =======
     width: 282.2
+<<<<<<< HEAD
     height: 339.8
+>>>>>>> refs/remotes/origin/main
+=======
+    height: 377.4
 >>>>>>> refs/remotes/origin/main
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -1187,6 +1205,7 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
       m_SelectedIDs: 
       m_LastClickedID: 0
 <<<<<<< HEAD
@@ -1194,20 +1213,25 @@ MonoBehaviour:
 =======
       m_ExpandedIDs: 1c64feffec29ffff544effff8084ffff20f2fffff2faffff986c0000706d0000a07000003eb30000
 >>>>>>> refs/remotes/origin/main
+=======
+      m_SelectedIDs: b6700000
+      m_LastClickedID: 28854
+      m_ExpandedIDs: 1cfbffffea6f0000
+>>>>>>> refs/remotes/origin/main
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Player
+        m_OriginalName: Player
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 29224
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 8}
       m_SearchString: 
@@ -1250,7 +1274,11 @@ MonoBehaviour:
     x: 283.2
     y: 73.6
     width: 854.8
+<<<<<<< HEAD
     height: 339.8
+>>>>>>> refs/remotes/origin/main
+=======
+    height: 377.4
 >>>>>>> refs/remotes/origin/main
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -1602,6 +1630,7 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_Position:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: -6.139, y: 0.15199995, z: -1}
     speed: 2
     m_Value: {x: -6.139, y: 0.15199995, z: -1}
@@ -1609,6 +1638,11 @@ MonoBehaviour:
     m_Target: {x: -2.504875, y: 13.2552595, z: -20.144188}
     speed: 2
     m_Value: {x: -2.3054981, y: 13.1696825, z: -20.14062}
+>>>>>>> refs/remotes/origin/main
+=======
+    m_Target: {x: -1.6665072, y: 31.632473, z: -20.101229}
+    speed: 2
+    m_Value: {x: -1.6665072, y: 31.632473, z: -20.101229}
 >>>>>>> refs/remotes/origin/main
   m_RenderMode: 0
   m_CameraMode:
@@ -1647,7 +1681,7 @@ MonoBehaviour:
       m_Fade:
         m_Target: 1
         speed: 2
-        m_Value: 1
+        m_Value: 0
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
       m_Size: {x: 1, y: 1}
@@ -1657,8 +1691,9 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0, y: 0, z: 0, w: 1}
     speed: 2
-    m_Value: {x: -0.000000014901161, y: 0.0000000018626451, z: -4.656613e-10, w: -1}
+    m_Value: {x: 0.000000014901161, y: -0.0000000037252903, z: 4.656613e-10, w: 1}
   m_Size:
+<<<<<<< HEAD
 <<<<<<< HEAD
     m_Target: 12.124355
     speed: 2
@@ -1667,6 +1702,11 @@ MonoBehaviour:
     m_Target: 8.287439
     speed: 2
     m_Value: 7.930564
+>>>>>>> refs/remotes/origin/main
+=======
+    m_Target: 17.316639
+    speed: 2
+    m_Value: 17.316639
 >>>>>>> refs/remotes/origin/main
   m_Ortho:
     m_Target: 1
@@ -1685,7 +1725,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: -0.17130575, y: 0.025711864, z: -0.00445555, w: -0.98489845}
+  m_LastSceneViewRotation: {x: 0.15699185, y: -0.042150456, z: 0.006752984, w: 0.98667896}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -1725,7 +1765,11 @@ MonoBehaviour:
     x: 283.2
     y: 73.6
     width: 854.8
+<<<<<<< HEAD
     height: 339.8
+>>>>>>> refs/remotes/origin/main
+=======
+    height: 377.4
 >>>>>>> refs/remotes/origin/main
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -1744,9 +1788,13 @@ MonoBehaviour:
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_TargetSize: {x: 898.7999, y: 442}
 =======
   m_TargetSize: {x: 567, y: 318.8}
+>>>>>>> refs/remotes/origin/main
+=======
+  m_TargetSize: {x: 634, y: 356.4}
 >>>>>>> refs/remotes/origin/main
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
@@ -1763,6 +1811,7 @@ MonoBehaviour:
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_HBaseRangeMin: -359.52
     m_HBaseRangeMax: 359.52
     m_VBaseRangeMin: -176.8
@@ -1772,6 +1821,12 @@ MonoBehaviour:
     m_HBaseRangeMax: 226.8
     m_VBaseRangeMin: -127.52
     m_VBaseRangeMax: 127.52
+>>>>>>> refs/remotes/origin/main
+=======
+    m_HBaseRangeMin: -253.6
+    m_HBaseRangeMax: 253.6
+    m_VBaseRangeMin: -142.56
+    m_VBaseRangeMax: 142.56
 >>>>>>> refs/remotes/origin/main
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
@@ -1797,9 +1852,13 @@ MonoBehaviour:
     m_Translation: {x: 449.4, y: 221}
 =======
       width: 854.8
-      height: 318.8
+      height: 356.4
     m_Scale: {x: 1.25, y: 1.25}
+<<<<<<< HEAD
     m_Translation: {x: 427.39996, y: 159.4}
+>>>>>>> refs/remotes/origin/main
+=======
+    m_Translation: {x: 427.39996, y: 178.2}
 >>>>>>> refs/remotes/origin/main
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -1817,12 +1876,16 @@ MonoBehaviour:
   m_LastWindowPixelSize: {x: 1123.4999, y: 578.75}
 =======
       x: -341.91998
-      y: -127.52
+      y: -142.56
       width: 683.83997
-      height: 255.04
+      height: 285.12
     m_MinimalGUI: 1
   m_defaultScale: 1
+<<<<<<< HEAD
   m_LastWindowPixelSize: {x: 1068.5, y: 424.75}
+>>>>>>> refs/remotes/origin/main
+=======
+  m_LastWindowPixelSize: {x: 1068.5, y: 471.75}
 >>>>>>> refs/remotes/origin/main
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
