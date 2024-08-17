@@ -1,5 +1,6 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerTestSaveLoad : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class PlayerTestSaveLoad : MonoBehaviour
             saveLoadSystem.GuardarDatos(GetComponent<Player_Life_Script>().GetVida(),GetComponent<Player_Life_Script>().GetMaximoVida()
             ,GetComponent<Player_CombateCaC>().getDaño(),GetComponent<Player_CombateCaC>().getMaxStamina(),
             GetComponent<Player_CombateCaC>().getXp(),GetComponent<Player_CombateCaC>().puntosXP,transform.position);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
         if (Input.GetKeyDown(KeyCode.L))

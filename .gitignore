@@ -61,8 +61,7 @@ Assets/AssetStoreTools*
 .idea/
 /.idea/*
 
-# TextMeshPro generated files
-/TextMeshPro/*
+
 
 # Ignore auto-generated Oculus files
 /Assets/Oculus/
