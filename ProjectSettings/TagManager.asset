@@ -4,21 +4,24 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Enemigo
-  - Item
-  - oro
-  - boss
   - PuntoGuardado
+  - boss
+  - Item
+  - Enemigo
+  - oro
+  - Inventario
+  - Barras
+  - MuerteJugador
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Suelo
+  - piso
   - Water
   - UI
-  - player
-  - boss
-  - Enemigos
+  - Enemigo
+  - Guardado
+  - 
   - 
   - 
   - 
@@ -46,34 +49,45 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Fondo
-<<<<<<< HEAD
-    uniqueID: 822017091
+  - name: FondoBackGrounf
+    uniqueID: 1954888111
     locked: 0
-  - name: Paletas
-    uniqueID: 737323787
+  - name: FondoPintura
+    uniqueID: 3764959707
+    locked: 0
+  - name: fondo
+    uniqueID: 4012198821
+    locked: 0
+  - name: piso
+    uniqueID: 2927595953
     locked: 0
   - name: Decoracion
-    uniqueID: 3563002847
+    uniqueID: 2347617957
     locked: 0
-  - name: Player
-    uniqueID: 4130805477
+  - name: muros
+    uniqueID: 836761691
+    locked: 0
+  - name: fondopost
+    uniqueID: 3423723473
+    locked: 0
+  - name: player
+    uniqueID: 2145408619
     locked: 0
   - name: Enemigos
-    uniqueID: 3883412675
+    uniqueID: 4160362911
     locked: 0
-  - name: Camara
-    uniqueID: 3518915019
-=======
-    uniqueID: 63691369
+  - name: DecoracionAtravez
+    uniqueID: 1538392333
     locked: 0
-  - name: Suelo
-    uniqueID: 316446219
+  - name: Guardado
+    uniqueID: 1276565271
     locked: 0
-  - name: 'Enemigos '
-    uniqueID: 4088867333
+  - name: Items
+    uniqueID: 3520046669
     locked: 0
-  - name: Jugador
-    uniqueID: 3976255307
->>>>>>> 33c551a6338f47ee3de66f87b39e5092a8988d4f
+  - name: muro_1
+    uniqueID: 3228190533
+    locked: 0
+  - name: muro_2
+    uniqueID: 1763934437
     locked: 0

@@ -8,10 +8,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 46ea0d4748e11bb46bd72a3e2b5887a6
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Progreso.unity
     guid: a8aef77227a27474fab1f5fc099c5d0b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Planataforma_1.unity
+    guid: 58a53fa8d2ea1a248838d0aa1c69049a
+  - enabled: 1
+    path: Assets/Scenes/Plataforma_2.unity
+    guid: 23305d9857e4caf4bad153ed555093f3
+  - enabled: 1
+    path: Assets/Scenes/Plataforma_3.unity
+    guid: 7eae9b00a2916b244958f40031efa1d7
   m_configObjects: {}

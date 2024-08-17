@@ -22,6 +22,7 @@ public class Patruyaje : MonoBehaviour
     }
 
     private void Update(){
+        Debug.Log(Vector3.Distance(gameObject.transform.position,player.GetComponent<Transform>().position));
         if(Vector3.Distance(gameObject.transform.position,player.GetComponent<Transform>().position) < distanciaPlayer){
             debePerseguir = true;
         }else{
